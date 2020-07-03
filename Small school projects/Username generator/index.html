@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NickGen</title>
+		<meta charset="utf-8">
+		<meta lang="hu">
+		
+		<script>
+			function gen(){
+			var vn = document.getElementById("vn").value;          // 1-2.karakter
+			var kn = document.getElementById("kn").value;          // 1-2.karakter
+			var szulev = document.getElementById("szulev").value;  // 3-4. karakter
+			var szulh = document.getElementById("szulh").value;    //utolsó két karakter
+			
+		/*	var v1 = vn.toString().substr(0,2);
+			var v2 = kn.toString().substr(0,2);
+			var v3 = szulev.toString().substr(2,2);
+			var v4 = szulh.toString().substr(str.length - 2, str.length - 0);
+			*/
+			
+			var v1 = vn.substring(0,2);
+			var v2 = kn.substring(0,2);
+			var v3 = szulev.substring(2);
+			var v4 = szulh.substring(szulh.length - 2, szulh.length - 0);
+			
+			felh = v1+v2+v3+v4;
+			alert(felh);
+				}
+		</script>
+		<style>
+			#fejléc{
+				text-align:center;
+				font-size: 70px;
+				margin-top:30;
+			}
+		</style>
+	</head>
+	<body>
+	<p id="fejléc">Felhasználónév generátor</p>
+	Vezetéknév		<input type="text" id ="vn" name="vn" placeholder="Doe"><br>
+	Keresztnév		<input type="text" id ="kn" name="kn" placeholder="John"><br>
+	Születési év	<input type="number" id ="szulev" name="szulev" placeholder="2019"><br>
+	Születési hely	<input type="text" id ="szulh" name="szulh" placeholder="Hungary"><br>
+	<button onclick="gen()">Generál</button>
+	</body>
+</html>

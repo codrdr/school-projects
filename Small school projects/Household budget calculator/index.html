@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="val.js"> </script>
+	<link rel="stylesheet" type="text/css" href="f.css">
+	<meta lang="HU">
+	<meta charset="UTF-8">
+	<title>Rácz Dávid 13.A</title>
+<body>
+	<div class="fejlec">Háztartásiköltségvetés-kalkulátor</div>
+		<img src="vonal.png" style="height:4px;width:100%">
+	<div>
+		<div class="egyeb">Bevétel</div>
+	
+		<label for="brutto" id="cimke">Bruttó bevétel/hó:</label>
+		<input type="number" id="brutto" name="bev" placeholder="x forint">
+
+		<label for="netto" id="cimke">Egyéb nettó jövedelem/hó:</label>
+		<input type="number" id="netto" name="bev1" placeholder="x forint">
+	</div>
+		<br>
+	<div>
+		<div class="egyeb">Kiadások</div>
+		
+		<label for="bevasarlas" id="cimke">Bevásárlás:</label>
+		<input type="number" id="bevasarlas" name="bevasarlas" placeholder="x forint">
+		
+		<label for="jarmu" id="cimke">Jármű költség:</label>
+		<input type="number" id="jarmu" name="jarmu" placeholder="x forint">
+
+		<label for="egeszseg" id="cimke">Egészségügyi kiadások:</label>
+		<input type="number" id="egeszseg" name="egeszseg" placeholder="x forint">
+		
+		<label for="szolgaltatas" id="cimke">Szolgáltatások (szórakozás, élvezeti cikkek, fodrászat stb.)</label>
+		<input type="number" id="szolgaltatas" name="szolgaltatas" placeholder="x forint">
+		
+		<label for="lakhatas" id="cimke">Lakhatás:</label>
+		<input type="number" id="lakhatas" name="lakhatas" placeholder="x forint">
+		
+		<label for="komm" id="cimke">Kommunikációs költség:</label>
+		<input type="number" id="komm" name="komm" placeholder="x forint">
+		
+		<button onclick="merleg();">Havi mérleg kiszámítása</button>
+	</div>
+</body>
+</html>
